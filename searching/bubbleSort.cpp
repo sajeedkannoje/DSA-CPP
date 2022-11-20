@@ -1,25 +1,20 @@
-#include <iostream>
-using namespace std;
-  
-int main()
-{
-  int arr [] = {1,2,6,4,3,5};
+//https://www.codingninjas.com/codestudio/problems/bubble-sort_980524
+#include <bits/stdc++.h> 
+#include<vector>
 
-int size = 6;
-    for(int i =0; i < size; i ++   ){
-        for (int j = 0; j < size - 1; j++)
+void bubbleSort(vector<int>& arr, int n)
+{   
+    for(int i =1; i < n; i ++   ){
+        bool swapped = false;
+        for (int j = 0; j < n - 1; j++)
         {
-            if(arr[i] < arr[j]){
-               swap(arr[i],arr[j]);
+            if(arr[j] > arr[j+1]){
+               swap(arr[j],arr[j+1]);   
+                swapped = true;
             }
         }
+        if(swapped == false){
+            break;
+        }
     }
-
-for (int i = 0; i < 6; i++)
-{
-        cout << arr[i] <<endl;
-    
-}
-
-    return 0;
 }
