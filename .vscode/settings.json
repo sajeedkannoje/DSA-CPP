@@ -1,6 +1,8 @@
 {
     "files.associations": {
-        "functional": "cpp"
+        "\"files.associations": "{ \"*.module\": \"php\" }",
+        "functional": "cpp",
+        "iostream": "cpp"
     },
     "C_Cpp.errorSquiggles": "Enabled"
 }
